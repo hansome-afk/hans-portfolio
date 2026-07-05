@@ -1,8 +1,8 @@
 export const NAV_LINKS = ["About", "Skills", "Education", "Experience", "Projects", "Awards", "Contact"];
 
-export const SKILLS_TECH = ["HTML", "CSS", "PHP", "Kotlin", "ASP.NET", "SQL", "JavaScript", "React (used in this Portfolio)", "Flutter", "Figma"];
+export const SKILLS_TECH = ["HTML", "CSS", "PHP", "Kotlin", "ASP.NET", "SQL"];
 
-export const SKILLS_SOFT = ["Leadership", "Collaboration", "Critical Thinking", "Active Listening", "Adaptable", "Creativity", "Willingness to Learn", "Problem-Solving", "Time Management", "Teamwork"];
+export const SKILLS_SOFT = ["Leadership", "Collaboration", "Critical Thinking", "Active Listening", "Adaptable", "Creativity"];
 
 export const EDUCATION = [
   {
@@ -50,6 +50,7 @@ export const PROJECTS = [
     sub: "from Kicks to Clinics",
     year: "2025 – 2026",
     desc: "A mobile app for maternal health monitoring, appointment reminders, and emergency clinic assistance.",
+    role: "Developer / QA",
     tag: "Mobile App",
     color: "#7C3AED",
   },
@@ -58,13 +59,15 @@ export const PROJECTS = [
     sub: "Digital Ordering Platform",
     year: "2024 – 2025",
     desc: "A digital ordering platform built for print services, streamlining order placement and tracking.",
+    role: "Developer / QA",
     tag: "Web App",
     color: "#0891B2",
   },
 ];
 
 export const AWARDS = [
-  { title: "Dean's Lister", detail: "6 consecutive terms, AY 2022–2025", icon: "🏆" },
+  { title: "Cum Laude", detail: "On track for Latin Honors, AY 2022–2026", icon: "🎖️" },
+  { title: "Dean's Lister", detail: "8 consecutive terms, AY 2022–2026", icon: "🏆" },
   { title: "Senior High School Honors", detail: "AY 2020–2022", icon: "🎓" },
   { title: "Junior High School Honors", detail: "AY 2016–2020", icon: "🎓" },
   { title: "Church Ministry Award", detail: "AY 2018–2019, 2019–2020", icon: "✝️" },

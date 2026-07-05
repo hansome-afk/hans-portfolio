@@ -30,17 +30,32 @@ export function Projects() {
                   }}
                 />
 
-                <span
-                  style={{
-                    ...sharedStyles.pill,
-                    background: `${p.color}18`,
-                    border: `1px solid ${p.color}44`,
-                    color: p.color,
-                    fontSize: 11,
-                  }}
-                >
-                  {p.tag}
-                </span>
+                <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: 8 }}>
+                  <span
+                    style={{
+                      ...sharedStyles.pill,
+                      background: `${p.color}18`,
+                      border: `1px solid ${p.color}44`,
+                      color: p.color,
+                      fontSize: 11,
+                    }}
+                  >
+                    {p.tag}
+                  </span>
+                  <span
+                    style={{
+                      background: "#1E1B2E",
+                      border: "1px solid #ffffff12",
+                      color: "#9B93B8",
+                      borderRadius: 100,
+                      padding: "4px 12px",
+                      fontSize: 11,
+                      fontWeight: 500,
+                    }}
+                  >
+                    {p.role}
+                  </span>
+                </div>
 
                 <div style={{ marginTop: 16, fontWeight: 800, fontSize: 18, color: "#fff", lineHeight: 1.2 }}>
                   {p.name}
