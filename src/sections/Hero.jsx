@@ -5,20 +5,40 @@ export function Hero({ onNavigate }) {
     { num: "8", label: "Terms Dean's Listed" },
     { num: "2", label: "Apps Developed" },
     { num: "9+", label: "Leadership Roles" },
-    { num: "UST", label: "College of CICS" },
+    { num: "UST", label: "Cum Laude · CICS" },
   ];
 
   return (
     <>
       <style>{`
-        .hero-title { font-size: clamp(36px, 6vw, 72px); }
-        .hero-bio   { font-size: 18px; }
-        .hero-stats { gap: 48px; }
-
+        .hero-title  { font-size: clamp(36px, 6vw, 72px); }
+        .hero-bio    { font-size: 18px; }
+        .hero-stats  { gap: 48px; }
+        .cum-laude-badge {
+          display: inline-flex;
+          align-items: center;
+          gap: 8px;
+          background: linear-gradient(135deg, #7C3AED22, #F59E0B22);
+          border: 1px solid #F59E0B66;
+          border-radius: 100px;
+          padding: 8px 20px;
+          font-size: 13px;
+          font-weight: 700;
+          color: #FCD34D;
+          letter-spacing: 1px;
+          text-transform: uppercase;
+          margin-bottom: 24px;
+          animation: shimmer 2.5s infinite;
+        }
+        @keyframes shimmer {
+          0%   { box-shadow: 0 0 0px #F59E0B00; }
+          50%  { box-shadow: 0 0 18px #F59E0B55; }
+          100% { box-shadow: 0 0 0px #F59E0B00; }
+        }
         @media (max-width: 768px) {
-          .hero-title  { font-size: 36px !important; }
-          .hero-bio    { font-size: 15px !important; }
-          .hero-stats  { gap: 28px !important; justify-content: center; }
+          .hero-title   { font-size: 36px !important; }
+          .hero-bio     { font-size: 15px !important; }
+          .hero-stats   { gap: 28px !important; justify-content: center; }
           .hero-buttons { flex-direction: column; align-items: center; }
         }
       `}</style>
@@ -52,7 +72,6 @@ export function Hero({ onNavigate }) {
         {/* Content */}
         <div style={{
           width: "100%",
-          maxWidth: "100%",
           paddingTop: 100,
           paddingBottom: 60,
           paddingLeft: "clamp(24px, 5%, 120px)",
@@ -64,6 +83,12 @@ export function Hero({ onNavigate }) {
           position: "relative",
           zIndex: 1,
         }}>
+
+          {/* Cum Laude badge */}
+          <div className="cum-laude-badge">
+            🎖️ Cum Laude Graduate · University of Santo Tomas
+          </div>
+
           <div style={{
             fontFamily: "'Space Mono', monospace",
             fontSize: 12,
@@ -96,12 +121,13 @@ export function Hero({ onNavigate }) {
           <p className="hero-bio" style={{
             color: "#9B93B8",
             marginTop: 24,
-            maxWidth: 600,
+            maxWidth: 620,
             lineHeight: 1.7,
             textAlign: "center",
           }}>
-            IT student at UST specializing in Web &amp; Mobile App Development. Dean's Lister,
-            student leader, and builder of apps that solve real-world problems.
+            BS Information Technology graduate from UST, specializing in Web &amp; Mobile App Development.
+            Graduated <strong style={{ color: "#FCD34D" }}>Cum Laude</strong> with 8 consecutive Dean's List terms,
+            a student leader, and builder of apps that solve real-world problems.
           </p>
 
           <div className="hero-buttons" style={{
