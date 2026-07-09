@@ -1,6 +1,6 @@
 export const NAV_LINKS = ["About", "Skills", "Education", "Experience", "Projects", "Awards", "Contact"];
 
-export const SKILLS_TECH = ["HTML", "CSS", "PHP", "Kotlin", "ASP.NET", "SQL", "Data Analysis", "React (used in this website), Figma, Git", "Mobile App Development", "Web App Development", "UI/UX Design",  "Agile Methodologies" ];
+export const SKILLS_TECH = ["HTML", "CSS", "PHP", "Kotlin", "ASP.NET", "SQL", "Data Analysis", "React (used in this website)", "Figma", "Git", "Mobile App Development", "Web App Development", "UI/UX Design",  "Agile Methodologies" ];
 
 export const SKILLS_SOFT = ["Leadership", "Collaboration", "Critical Thinking", "Active Listening", "Adaptable", "Creativity","Project Management", "Agile Methodologies"];
 
